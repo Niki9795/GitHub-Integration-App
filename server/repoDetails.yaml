@@ -1,0 +1,31 @@
+repoDetails:
+  - id: 1
+    name: UI-
+    url: https://github.com/np873/UI-.git
+    language: HTML
+    updated: 03/18/2023 
+  - id: 2
+    name: SE577-Software-Architecture
+    url: https://github.com/np873/SE577-Software-Architecture.git
+    language: vue
+    updated: 05/07/2023 
+  - id: 3
+    name: Repo3
+    url: https://github.com/np873/repo3
+    language: vue
+    updated: 08/13/2022 
+  - id: 4
+    name: Repo4
+    url: https://github.com/np873/repo4
+    language: typescript
+    updated: 01/25/2022 
+  - id: 5
+    name: Repo5
+    url: https://github.com/np873/repo5
+    language: javascript
+    updated: 06/10/2021 
+  - id: 6
+    name: Repo6
+    url: https://github.com/np873/repo6
+    language: java
+    updated: 18/07/2022 

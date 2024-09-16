@@ -1,0 +1,29 @@
+{
+  "name": "microservices",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p tsconfig.json",
+    "start": "node server.ts",
+    "watch": "nodemon  server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@fastify/cors": "^8.2.1",
+    "@fastify/http-proxy": "^9.1.0",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.17.0",
+    "fastify-cors": "^6.1.0",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "yaml": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.0",
+    "typescript": "^5.0.4"
+  },
+  "main": "index.js",
+  "license": "ISC",
+  "description": ""
+}
