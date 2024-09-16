@@ -1,60 +1,68 @@
 <!-- components/Navbar.vue -->
 
 <template>
-  
-    <header>
-      <nav>
-          <RouterLink to="/" class="text-white">Home</RouterLink>
-          <RouterLink to="/log in">Log in</RouterLink>
-          <RouterLink to="/repos">Repos</RouterLink>
-          <RouterLink to="/profile">Profile</RouterLink>
-          <RouterLink to="/githubrepos">GitHub API Repos</RouterLink>
-          <RouterLink to="/githubgists">GitHub API Gist</RouterLink>
-        </nav>
-        <hr/>
-    </header>
-  
-    <RouterView />
+  <header class="leading-relaxed max-h-screen">
+    <nav>
+      <div class="mx-auto p-4 font-normal">
+        <div class="no-underline text-blueviolet">
+
+          <RouterLink 
+            to="/" 
+            class="transition duration-400 
+                   hover:bg-[hsla(281,26%,65%,0.2)]
+                   mr-2">
+            Home
+          </RouterLink>
+
+          <RouterLink 
+            to="/log in" 
+            class="transition duration-400 
+                   hover:bg-[hsla(281,26%,65%,0.2)]
+                   mr-2">
+            Log in
+          </RouterLink>
+
+          <RouterLink 
+            to="/repos" 
+            class="transition duration-400 
+                   hover:bg-[hsla(281,26%,65%,0.2)]
+                   mr-2">
+            Repos
+          </RouterLink>
+
+          <RouterLink 
+            to="/profile" 
+            class="transition duration-400 
+                   hover:bg-[hsla(281,26%,65%,0.2)]
+                   mr-2">
+            Profile
+          </RouterLink>
+
+          <RouterLink 
+            to="/githubrepos" 
+            class="transition duration-400
+                   hover:bg-[hsla(281,26%,65%,0.2)]
+                   mr-2">
+            GitHub API Repos
+          </RouterLink>
+
+          <RouterLink 
+            to="/githubgists" 
+            class="transition duration-400
+                   hover:bg-[hsla(281,26%,65%,0.2)]
+                   mr-2">
+            GitHub API Gist
+          </RouterLink>
+
+        </div>
+      </div>
+    </nav>
+    <hr/>
+  </header>
+
+  <RouterView />
 </template>
   
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 </script>
-  
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 1rem;
-}
-
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
-
-nav a:first-of-type {
-  border: 0;
-}
-
-</style>
